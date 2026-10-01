@@ -194,13 +194,3 @@ SadarEdu-be/
 | `POST` | `/api/v1/simulasi/scenarios` | ✅ | Membuat skenario intervensi baru & menghitung hasil simulasi |
 
 ---
-
-## 🧭 Catatan Bagi Pengembang Selanjutnya (Roadmap Developer)
-
-1.  **Lengkapi CRUD Endpoint**:
-    *   Tambahkan metode **`PUT` / `PATCH`** (Update) dan **`DELETE`** (Hapus) pada controller yang sudah ada (`sekolah`, `wilayah`, `indikator`, dll).
-    *   Buat controller & route baru untuk tabel pendukung yang belum memiliki controller terpisah: `dataset_metadata`, `kependudukan`, `nilai_indikator`, dan `role`.
-2.  **Validasi Request Body**:
-    *   Integrasikan library validasi seperti `express-validator` atau `zod` untuk memvalidasi tipe data & koordinat spasial sebelum di-insert ke database.
-3.  **Upload File Geospasial**:
-    *   Fitur penanganan unggah file shapefile (`.shp` / `.zip`) atau GeoJSON secara langsung di endpoint `/api/v1/datasets`.
